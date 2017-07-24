@@ -15,7 +15,7 @@ import {
   Upload
 } from 'antd';
 
-import {Router, Route, Link, browserHistory} from 'react-router';
+import {Route, BrowserRouter, Switch,Link} from 'react-router-dom';
 import MobileHeader from './mobileHeader';
 import MobileFooter from './mobileFooter';
 

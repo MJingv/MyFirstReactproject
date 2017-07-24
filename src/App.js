@@ -5,7 +5,7 @@ import './App.css';
 import PCIndex from './component/pcIndex';
 import MobileIndex from './component/mobileIndex';
 
-import {Router, Route, Link, browserHistory, hashHistory} from 'react-router';
+import {Route, BrowserRouter, Switch} from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import PCNewsDetails from './component/pcNewsDetails.js';
 import MobileNewsDetails from './component/mobileNewsDetails.js';
@@ -16,19 +16,24 @@ class App extends Component {
     return (
       <div >
         <MediaQuery query='(min-device-width:1224px)'>
-          <Router history={hashHistory}>
-            <Route path="/" component={PCIndex}></Route>
-            <Route path="/details/:uniquekey" component={PCNewsDetails}></Route>
-            <Route path="/usercenter" component={PCUserCenter}></Route>
-          </Router>
+          <BrowserRouter >
+            <Switch>
+              <Route path="/" component={PCIndex}></Route>
+              <Route path="/details/:uniquekey" component={PCNewsDetails}></Route>
+              <Route path="/usercenter" component={PCUserCenter}></Route>
+            </Switch>
+          </BrowserRouter>
         </MediaQuery>
 
         <MediaQuery query='(max-device-width:1224px)'>
-          <Router history={hashHistory}>
-            <Route path="/" component={MobileIndex}></Route>
-            <Route path="/details/:uniquekey" component={MobileNewsDetails}></Route>
-            <Route path="/usercenter" component={MobileUserCenter}></Route>
-          </Router>
+          <BrowserRouter >
+            <Switch>
+              <Route exact path="/" component={MobileIndex}></Route>
+              <Route path="/details/:uniquekey" component={MobileNewsDetails}></Route>
+
+              <Route path="/usercenter" component={MobileUserCenter}></Route>
+            </Switch>
+          </BrowserRouter>
         </MediaQuery>
       </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../images/logo.svg';
-import {Router, Route, Link, browserHistory} from 'react-router'
+import {Route, BrowserRouter, Switch,Link} from 'react-router-dom';
 
 import {
   Row,

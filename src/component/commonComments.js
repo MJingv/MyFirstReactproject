@@ -14,7 +14,7 @@ import {
   notification
 } from 'antd';
 
-import {Router, Route, Link, browserHistory} from 'react-router';
+import {Route, BrowserRouter, Switch,Link} from 'react-router-dom';
 const FormItem = Form.Item;
 const SubMenu = Menu.SubMenu;
 const TabPane = Tabs.TabPane;
