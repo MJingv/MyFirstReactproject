@@ -5,9 +5,7 @@ import PCNewsContainer from './pcNewsContainer';
 
 
 export default class PCIndex extends React.Component{
-  constructor() {
-    super();
-  };
+
 
   render(){
     return (

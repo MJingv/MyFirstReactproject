@@ -24,10 +24,10 @@ export default class PCNewsContainer extends React.Component {
             <div className="leftContainer">
               <div className="carousel">
                 <Carousel {...settings}>
-                  <div><img src={require("../../src/images/carousel_1.jpg")} /></div>
-                  <div><img src={require("../../src/images/carousel_2.jpg")}/></div>
-                  <div><img src={require("../../src/images/carousel_3.jpg")}/></div>
-                  <div><img src={require("../../src/images/carousel_4.jpg")}/></div>
+                  <div><img alt="newsimgs" src={require("../../src/images/carousel_1.jpg")} /></div>
+                  <div><img alt="newsimgs" src={require("../../src/images/carousel_2.jpg")}/></div>
+                  <div><img alt="newsimgs" src={require("../../src/images/carousel_3.jpg")}/></div>
+                  <div><img alt="newsimgs" src={require("../../src/images/carousel_4.jpg")}/></div>
                 </Carousel>
               </div>
 

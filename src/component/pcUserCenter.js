@@ -4,18 +4,12 @@ import {
   Menu,
   Icon,
   Tabs,
-  message,
   Form,
-  Input,
-  Button,
-  CheckBox,
   Modal,
   Card,
-  notification,
   Upload
 } from 'antd';
 
-import {Router, Route, Link, browserHistory} from 'react-router';
 
 import PCHeader from './pcHeader';
 import PCFooter from './pcFooter';

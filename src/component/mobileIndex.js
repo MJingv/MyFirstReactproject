@@ -7,9 +7,7 @@ import MobileList from './mobileList';
 const TabPane = Tabs.TabPane;
 
 export default class MobileIndex extends React.Component {
-  constructor() {
-    super();
-  };
+
 
   render() {
     const settings = {
@@ -25,10 +23,10 @@ export default class MobileIndex extends React.Component {
           <TabPane tab="头条" key="1">
             <div className = "carousel">
               <Carousel {...settings}>
-                <div><img src = {require ("../../src/images/carousel_1.jpg")}></img></div>
-                <div><img src = {require ("../../src/images/carousel_2.jpg")}></img></div>
-                <div><img src = {require ("../../src/images/carousel_3.jpg")}></img></div>
-                <div><img src = {require ("../../src/images/carousel_4.jpg")}></img></div>
+                <div><img alt="newsimgs" src = {require ("../../src/images/carousel_1.jpg")}></img></div>
+                <div><img alt="newsimgs" src = {require ("../../src/images/carousel_2.jpg")}></img></div>
+                <div><img alt="newsimgs" src = {require ("../../src/images/carousel_3.jpg")}></img></div>
+                <div><img alt="newsimgs" src = {require ("../../src/images/carousel_4.jpg")}></img></div>
               </Carousel>
 
             </div>

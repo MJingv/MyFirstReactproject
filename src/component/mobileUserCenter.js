@@ -4,18 +4,14 @@ import {
   Menu,
   Icon,
   Tabs,
-  message,
   Form,
-  Input,
-  Button,
-  CheckBox,
   Modal,
   Card,
   notification,
   Upload
 } from 'antd';
 
-import {Route, BrowserRouter, Switch,Link} from 'react-router-dom';
+
 import MobileHeader from './mobileHeader';
 import MobileFooter from './mobileFooter';
 
